@@ -6,19 +6,23 @@ import Typography from '@material-ui/core/Typography';
 import allitems from '../../../images/Home-Buttons/allitems.jpg'
 import newItems from '../../../images/Home-Buttons/newItems.jpg'
 import trends from '../../../images/Home-Buttons/trends.jpg'
+import { Link } from 'react-router-dom'
 
 const images = [
   {
     url: allitems,
     title: 'All Items',
+    path: '/all-items'
   },
   {
     url: newItems,
     title: 'New Items',
+    path: '/all-items'
   },
   {
     url: trends,
     title: 'Trending Items',
+    path: '/all-items'
   },
 ];
 
@@ -85,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
   imageTitle: {
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(1) + 6}px`,
-
+    fontSize: 25
   },
   imageMarked: {
     height: 3,
@@ -107,6 +111,8 @@ export default function ButtonRow() {
         <ButtonBase
           focusRipple
           key={image.title}
+          to = {image.path}
+          component={Link}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{

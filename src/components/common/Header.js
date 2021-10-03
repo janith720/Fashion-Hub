@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar,Nav, } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Logo from '../../images/rdfashionLogo.png'
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
         },
         {
             title: 'DRESSES',
-            link: '/dress'
+            link: '/dresses'
         },
         {
             title: 'SEASONAL',
@@ -37,12 +38,12 @@ export default function Header() {
             <Navbar 
             onToggle={() => console.log("Toggle")}
             onSelect={(eventKey) => console.log(eventKey)}
-            style={{background: 'teal',padding: '8px 20px',fontFamily: 'Poppins'}}
+            style={{background: 'teal',padding: '8px 22px',fontFamily: 'Poppins'}}
             collapseOnSelect expand="lg"
             //  bg="dark" 
             //  variant="dark"
              >
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
             <img
                 src={Logo}
                 width="40"
@@ -57,16 +58,16 @@ export default function Header() {
                 <Nav className="me-auto">
                     {NavLinks.map((val,key) => {
                         return(
-                            <Nav.Link key={key} style={{color: 'white'}} href={val.link}>
+                            <Link key={key} style={{color: 'white',textDecoration: 'none',paddingLeft: '12px'}} to={val.link}>
                                 {val.title}
-                            </Nav.Link>
+                            </Link>
                         )
                     })}
                 </Nav>
                 <Nav>
-                <Nav.Link eventKey={2} style={{color: 'white'}} href="#cart">
+                <Link style={{color: 'white',textDecoration: 'none',paddingLeft: '12px'}} to="/cart">
                     CART
-                </Nav.Link>
+                </Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

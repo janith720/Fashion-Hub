@@ -1,5 +1,5 @@
-import { Button } from "@material-ui/core";
 import React from 'react'
+import NeedToLearn from "./footer/NeedToLearn";
 
 export default function Footer() {
     return (
@@ -15,11 +15,12 @@ export default function Footer() {
                 display: 'inline',
                 float: 'right'
             }}>
-                <Button variant="contained" style={{
+                <NeedToLearn />
+                {/* <Button variant="contained" style={{
                     color: 'teal',
                     fontWeight: 'bold',
                     background: 'white'
-                }}>Learn React</Button>
+                }}>Learn React</Button> */}
             </div>
         </div>
     )
