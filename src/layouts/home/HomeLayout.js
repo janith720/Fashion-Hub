@@ -3,10 +3,10 @@
 //footer
 
 import React from 'react'
-import CommonLayout from './common/CommonLayout'
-import Body from '../layouts/home/Body'
+import CommonLayout from '../common/CommonLayout'
+import Body from './Body'
 
-export default function Home() {
+export default function HomeLayout() {
     return (
         <div>
             <CommonLayout>

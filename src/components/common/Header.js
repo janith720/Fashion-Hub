@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar,Nav, } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from '../../images/rdfashionLogo.png'
 
 export default function Header() {
@@ -38,7 +38,7 @@ export default function Header() {
             <Navbar 
             onToggle={() => console.log("Toggle")}
             onSelect={(eventKey) => console.log(eventKey)}
-            style={{background: 'teal',padding: '8px 22px',fontFamily: 'Poppins'}}
+            style={{background: '#CE93D8',padding: '8px 22px',fontFamily: 'Poppins'}}
             collapseOnSelect expand="lg"
             //  bg="dark" 
             //  variant="dark"
@@ -58,16 +58,27 @@ export default function Header() {
                 <Nav className="me-auto">
                     {NavLinks.map((val,key) => {
                         return(
-                            <Link key={key} style={{color: 'white',textDecoration: 'none',paddingLeft: '12px'}} to={val.link}>
+                            <NavLink key={key}
+                            activeStyle={{
+                                fontWeight: '500',
+                                color: "#8E24AA"
+                              }}
+                             style={{color: 'white',
+                                    textDecoration: 'none',
+                                    paddingLeft: '12px'}} 
+                             to={val.link}>
                                 {val.title}
-                            </Link>
+                            </NavLink>
                         )
                     })}
                 </Nav>
                 <Nav>
-                <Link style={{color: 'white',textDecoration: 'none',paddingLeft: '12px'}} to="/cart">
+                <NavLink activeStyle={{
+                                fontWeight: '500',
+                                color: "#8E24AA"
+                              }} style={{color: 'white',textDecoration: 'none',paddingLeft: '12px'}} to="/cart">
                     CART
-                </Link>
+                </NavLink>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

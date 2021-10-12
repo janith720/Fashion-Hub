@@ -7,10 +7,10 @@ export default function Footer() {
             position: 'fixed',
             bottom: '0px',
             width: '100%',
-            background: 'teal',
+            background: '#CE93D8',
             padding: '10px'
         }}>
-            <small>&copy; Copyright {new Date().getFullYear()}, Janith Ukwattage</small>
+            <small style={{color: 'white'}}>&copy; Copyright {new Date().getFullYear()}, Janith Ukwattage</small>
             <div style={{
                 display: 'inline',
                 float: 'right'

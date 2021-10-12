@@ -89,7 +89,8 @@ const useStyles = makeStyles((theme) => ({
   imageTitle: {
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(6)}px ${theme.spacing(1) + 6}px`,
-    fontSize: 25
+    fontSize: 25,
+    fontFamily: 'Poppins'
   },
   imageMarked: {
     height: 3,

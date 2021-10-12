@@ -1,5 +1,5 @@
 import React from 'react'
-import CommonLayout from './common/CommonLayout'
+import CommonLayout from '../common/CommonLayout'
 
 export default function AllItemsLayouts() {
     return (

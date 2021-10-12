@@ -14,14 +14,14 @@ import FlashOffIcon from '@material-ui/icons/FlashOff';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',
-    backgroundColor: 'teal'
+    backgroundColor: '#BA68C8'
   },
   title: {
     marginLeft: theme.spacing(1),
     flex: 1,
   },
   button: {
-    color: 'teal',
+    color: '#BA68C8',
     fontWeight: 'bold',
     background: 'white'
   }

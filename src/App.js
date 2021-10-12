@@ -1,9 +1,7 @@
 import './App.css';
-import Home from './layouts/Home';
+import { Home, OtherRoutes, AllItems, Cart } from './layouts/Layouts';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import CartLayout from './layouts/CartLayout';
-import AllItemsLayouts from './layouts/AllItemsLayouts';
-import OtherRoutes from './layouts/OtherRoutes';
+
 
 function App() {
 
@@ -35,8 +33,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/cart" component={CartLayout} />
-          <Route path="/all-items" component={AllItemsLayouts} />
+          <Route path="/cart" component={Cart} />
+          <Route path="/all-items" component={AllItems} />
           {otherRoutes.map((val,key) => {
             return(
               <Route key={key} path={val.path} component={() => {
