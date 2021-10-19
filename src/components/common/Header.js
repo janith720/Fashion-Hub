@@ -61,7 +61,7 @@ export default function Header() {
                             <NavLink key={key}
                             activeStyle={{
                                 fontWeight: '500',
-                                color: "#8E24AA"
+                                color: "#9C27B0"
                               }}
                              style={{color: 'white',
                                     textDecoration: 'none',
