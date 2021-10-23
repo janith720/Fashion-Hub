@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
-import SingleProduct from '../../components/common/productList/SingleProduct'
+import SingleProduct from '../../../components/common/productList/SingleProduct'
 
 
 const product = [
