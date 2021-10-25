@@ -5,18 +5,6 @@ import ProductName from './singleProduct/ProductName'
 import ProductPrice from './singleProduct/ProductPrice'
 import SizeList from './singleProduct/SizeList'
 
-// const product = {
-//     productName: "Product 0",
-//     type: "tshirt",
-//     color: ["black","blue"],
-//     size: ["l", "xl"],
-//     price: 1500,
-//     description: "This is the product description",
-//     quantity: 100,
-//     images: [1, 2],
-//     sku: "sk001"
-// };
-
 export default function SingleProduct({product}) {
     return (
         <Link to="/details" style={{textDecoration: 'none',color: 'black', fontFamily: 'poppins'}}>

@@ -8,7 +8,7 @@ const product = [
     productName: "Product 0",
     type: "tshirt",
     color: ["black","blue"],
-    size: ["L", "XL"],
+    size: ["M","L", "XL"],
     price: 1500,
     description: "This is the product description",
     quantity: 100,

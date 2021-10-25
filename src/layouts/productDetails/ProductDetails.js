@@ -11,7 +11,7 @@ export default function ProductDetails() {
             <CommonLayout>
                 <div style={{ marginBottom: '100px' }}>
                 <Grid container spacing={3}
-                    style={{backgroundColor: '#E1BEE7',borderRadius: '20px'}}
+                    style={{backgroundColor: '#F0CFFF',borderRadius: '20px'}}
                 >
                     <Grid item xs={12} md={6} lg={4}>
                         <ImageSwiper />
@@ -19,6 +19,7 @@ export default function ProductDetails() {
                     <Grid item xs={12} md={6} lg={7}>
                         <ProductInfo />
                     </Grid>
+                    
                 </Grid>
                 </div>
                 
