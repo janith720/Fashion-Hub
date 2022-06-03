@@ -29,23 +29,25 @@ const useStyle = makeStyles((theme) => ({
     }
 }));
 
- const product = 
-    {
-        productName: "Product 3",
-        type: "tshirt",
-        color: ["black","blue"],
-        size: ["S", "M"],
-        price: 10000,
-        description: "This is the product description",
-        quantity: 100,
-        images: [7, 8],
-        sku: "sk001"
-      };
+//  const product = 
+//     {
+//         productName: "Product 3",
+//         type: "tshirt",
+//         color: ["black","blue"],
+//         size: ["S", "M"],
+//         price: 10000,
+//         description: "This is the product description",
+//         quantity: 100,
+//         images: [7, 8],
+//         sku: "sk001"
+//       };
  
 
-export default function ProductInfo() {
+export default function ProductInfo({product}) {
 
     const [qty, setQty] = React.useState(1);
+    const [size, setSize] = React.useState();
+    
     const classes = useStyle();
 
     return (
@@ -66,7 +68,7 @@ export default function ProductInfo() {
             </div>
             <br />
             <div>
-                <ProductSizeList sizes={product.size} />
+                <ProductSizeList sizes={product.size} setSize = {setSize} />
             </div>
             <hr />
             <Grid container>
@@ -77,7 +79,7 @@ export default function ProductInfo() {
                     <TotalPrice qty={qty} unitPrice={product.price} />
                 </Grid>
                 <Grid item xs={12}>
-                    <AddToCart product={product} />
+                    <AddToCart product={product} qty={qty} size={size} />
                 </Grid>
             </Grid>
         </div>

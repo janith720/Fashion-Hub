@@ -7,7 +7,7 @@ import ProductList from './productList/ProductList'
 export default function AllItemsLayouts() {
     return (
         <CommonLayout>
-           <h2> AllItems</h2>
+           <h2> All Items</h2>
 
            <Grid container>
               <Grid item xs={12} sm={4} md={2}>

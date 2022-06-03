@@ -6,7 +6,7 @@ export default function CommonLayout(prop) {
     return (
         <div>
             <Header />
-            <div style={{padding: "0 8%",marginTop: '20px'}}>
+            <div style={{padding: "0 8%",marginTop: '80px'}}>
                 {prop.children}
             </div>
             <Footer />

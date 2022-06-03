@@ -10,7 +10,7 @@ import ButtonRow from '../../components/common/Home/ButtonRow'
 
 export default function Body() {
     return (
-        <div>
+        <div style={{marginTop: "10px"}}>
             <Carousel />
             <div style={{marginTop: '3%'}}>
 
