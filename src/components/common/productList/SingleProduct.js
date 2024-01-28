@@ -8,19 +8,19 @@ import ProductPrice from "./singleProduct/ProductPrice";
 import SizeList from "./singleProduct/SizeList";
 
 export default function SingleProduct({ product }) {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const handleProductSelect = () => {
-    dispatch(assignSelectedProduct(product))
-  }
+    dispatch(assignSelectedProduct(product));
+  };
 
   return (
     <Link
       to="/details"
       style={{ textDecoration: "none", color: "black", fontFamily: "poppins" }}
     >
-      <div onClick={handleProductSelect}
+      <div
+        onClick={handleProductSelect}
         style={{
           height: "450px",
           backgroundColor: "white",
@@ -28,8 +28,8 @@ export default function SingleProduct({ product }) {
           borderRadius: "4px",
           width: "100%",
           textAlign: "center",
-          boxShadow:
-            "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+          // boxShadow:
+          //   "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
         }}
       >
         <ProductImage ProductImage={product.images} />

@@ -13,25 +13,26 @@ export default function Header() {
       link: "/all-items",
     },
     {
-      title: "DRESSES",
+      title: "NEW ITEMS",
       link: "/dresses",
     },
     {
-      title: "SEASONAL",
+      title: "TRENDING ITEMS",
       link: "/seasonal",
     },
-    {
-      title: "DENIMS",
-      link: "/denims",
-    },
-    {
-      title: "TSHIRTS",
-      link: "/t-shirts",
-    },
-    {
-      title: "TOPS",
-      link: "/tops",
-    },
+    // TODO Need to add these pages
+    // {
+    //   title: "DENIMS",
+    //   link: "/denims",
+    // },
+    // {
+    //   title: "TSHIRTS",
+    //   link: "/t-shirts",
+    // },
+    // {
+    //   title: "TOPS",
+    //   link: "/tops",
+    // },
   ];
 
   return (

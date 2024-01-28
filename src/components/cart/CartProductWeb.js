@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
-import Button from '@material-ui/core/Button';
-import DeleteIcon from '@material-ui/icons/Delete';
+import Button from "@material-ui/core/Button";
+import DeleteIcon from "@material-ui/icons/Delete";
 import { Grid, CardMedia, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     padding: "10px",
     background: "white",
     marginBottom: "10px",
-    width: "1250px",
+    width: "1100px",
     marginLeft: "20px",
   },
   name: {
@@ -64,7 +64,7 @@ export default function CartProductWeb({
                 height: "200px",
                 marginLeft: "auto",
                 marginRight: "auto",
-                borderRadius: '5px'
+                borderRadius: "5px",
               }}
               image={image}
               title={name}
@@ -104,7 +104,9 @@ export default function CartProductWeb({
           color="secondary"
           className={classes.button}
           startIcon={<DeleteIcon />}
-          onClick={() => {handleRemove();}}
+          onClick={() => {
+            handleRemove();
+          }}
         >
           Delete
         </Button>

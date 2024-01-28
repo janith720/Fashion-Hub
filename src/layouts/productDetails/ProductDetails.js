@@ -17,7 +17,7 @@ export default function ProductDetails() {
           <Grid
             container
             spacing={3}
-            style={{ backgroundColor: "#F0CFFF", borderRadius: "20px" }}
+            style={{ backgroundColor: "#EBDEF0", borderRadius: "20px" }}
           >
             <Grid item xs={12} md={6} lg={4}>
               <ImageSwiper images={selectedProduct.images} />
